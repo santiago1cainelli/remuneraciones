@@ -1,11 +1,11 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue;
     margin: 0;
     padding: 20px;
 }
 
-.container{
+.container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -14,29 +14,51 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1,h3{
-    color: blue;
+h1{
+    background-color: blue;
+    color: azure;
 }
 
-.section{
+h2{
+    color:azure;
+    background-color: green;
+}
+
+.first{
+    background-color: blue;
+    color: azure;
+}
+
+.section {
     margin-bottom: 20px;
 }
 
-label{
-    display: block;
-    margin-bottom: 8px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: none
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+
+tfoot td {
+    background-color: #d3d3d3;
     font-weight: bold;
 }
 
-input,select{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.buttons {
+    margin-top: 20px;
+    text-align: right;
 }
 
-button{
+button {
     background-color: #007bff;
     color: aliceblue;
     padding: 10px 20px;
@@ -45,6 +67,18 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #0056b3;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
 }
